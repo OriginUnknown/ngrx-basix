@@ -1,0 +1,17 @@
+<div class="center-counter">
+  <div class="input-group mb-3 resize">
+      <div class="input-group-prepend">
+        <button class="btn btn-danger" type="button" (click)="downCounter();">-{{ decrementLabel }}</button>
+      </div>
+      <input type="text"
+             class="form-control"
+             placeholder="{{ placeholderText }}"
+             aria-label=""
+             aria-describedby="basic-addon1"
+             value="{{ initialValue }}"
+             (keyup)="updateCounterValueFromInput($event)" />
+      <div class="input-group-append">
+          <button class="btn btn-success" type="button" (click)="upCounter();">+{{ incrementLabel }}</button>
+        </div>
+    </div>
+</div>
